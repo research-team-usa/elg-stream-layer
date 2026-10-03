@@ -3,7 +3,8 @@
 **Architected, validated, and tested by Emanuel Schaaf — Runs successfully on real hardware**
 
 ## nvtop
-<img width="1917" height="1141" alt="Screenshot 2026-10-03 093252" src="https://github.com/user-attachments/assets/8640aec5-9ba4-48ad-bfbd-11306309b4e3" />
+<img width="1917" height="1141" alt="Screenshot 2026-10-03 093252" src="https://github.com/user-attachments/assets/5e23f8b2-ded4-4943-9e38-41c0174ccc6c" />
+
 
 ## SSH Server 
 <img width="1917" height="1137" alt="Screenshot 2026-10-03 103548" src="https://github.com/user-attachments/assets/73bb4bd2-06c7-4e7c-8bbc-d95348d84433" />
