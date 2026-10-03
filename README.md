@@ -128,7 +128,7 @@ Once the INT8 packet arrives on the GPU, it is mathematically restored before co
 ```python
 fp16_gpu_tensor = int8_gpu_tensor.to(torch.float16) * scale
 ```
-
+- [contakt](Contact.md)
 ---
 
 ## 📜 License
