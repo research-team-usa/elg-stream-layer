@@ -98,13 +98,13 @@ class AsyncLayerPagingEngine:
         if os.path.exists(TENSOR_CACHE_PATH) and os.path.exists(SCALES_CACHE_PATH):
             print(f"[ENGINE] Lade fertige INT8-RAM-Block direkt von der Festplatte (Pre-Fabrication)...")
             # Lädt den rohen Dump in Sekunden und pinnt ihn sofort für DMA
-            self.memory_pool = torch.load(TENSOR_CACHE_PATH).pin_memory()
-            self.scales_pool = torch.load(SCALES_CACHE_PATH)
+            self.memory_pool = torch.load(TENSOR_CACHE_PATH, weights_only=True).pin_memory()
+            self.scales_pool = torch.load(SCALES_CACHE_PATH, weights_only=True)
             loaded_from_cache = True
         else:
             print(f"[ENGINE] Kein Cache gefunden. Erschaffe und quantisiere neue INT8-Block...")
-            self.memory_pool = torch.load(TENSOR_CACHE_PATH, weights_only=True).pin_memory()
-            self.scales_pool = torch.load(SCALES_CACHE_PATH, weights_only=True)
+            self.memory_pool = torch.empty(total_elements, dtype=torch.int8, device="cpu").pin_memory()
+            self.scales_pool = {}
 
         self.cpu_params = []
         current_offset = 0
@@ -285,9 +285,9 @@ class OpenOriginPagingAPI(BaseHTTPRequestHandler):
         pass
         
 def main():
-    print("=" * 43)
+    print("=" * 53)
     print("🚀 OPEN ORIGIN: ELG-stream-layer (KI API)🚀")
-    print("=" * 43)
+    print("=" * 53)
 
     if not torch.cuda.is_available():
         print("❌ FEHLER: Kein CUDA-Gerät gefunden. Eine NVIDIA GPU ist erforderlich.")
