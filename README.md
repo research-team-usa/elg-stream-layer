@@ -55,6 +55,9 @@ While a standard Gemma 2 9B model demands ~18 GB of VRAM, the ELG Stream Layer k
 - **RAM:** Minimum 16 GB System RAM (20+ GB recommended for 9B models)
 - **Bus:** PCIe 3.0 or higher
 
+### ⚡ Performance & Hardware Dependency
+Please note that the actual generation speed (tokens per second) is highly dependent on your specific hardware configuration. Because the ELG Stream Layer dynamically transfers weights during inference, your **PCIe bus bandwidth** (PCIe 3.0 vs. 4.0/5.0) and **System RAM speed** (DDR4 vs. DDR5) are the primary performance bottlenecks, alongside the GPU's native compute capability.
+
 ### **Software Dependencies**
 Install the baseline requirements:
 
