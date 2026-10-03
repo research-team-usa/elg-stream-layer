@@ -110,6 +110,6 @@ all terms of this license.
 
 ---
 
-© 2026 Emanuel Schaaf — Open Origin Project
+© 10/03/2026 Emanuel Schaaf — Open Origin Project
 ---
 <img width="200" height="40" alt="Unterschrift" src="https://github.com/user-attachments/assets/5af3386e-49aa-49da-890c-4a0e54fac8f1" />
