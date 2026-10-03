@@ -2,7 +2,12 @@
 ### Asynchronous INT8 Layer‑Paging Engine for Large Language Models
 **Architected, validated, and tested by Emanuel Schaaf — Runs successfully on real hardware**
 
+## nvtop
 <img width="1917" height="1141" alt="Screenshot 2026-10-03 093252" src="https://github.com/user-attachments/assets/8640aec5-9ba4-48ad-bfbd-11306309b4e3" />
+
+## SSH Server 
+<img width="1917" height="1137" alt="Screenshot 2026-10-03 103548" src="https://github.com/user-attachments/assets/73bb4bd2-06c7-4e7c-8bbc-d95348d84433" />
+
 
 ---
 
